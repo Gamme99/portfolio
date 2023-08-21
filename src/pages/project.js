@@ -91,7 +91,7 @@ export default function Project() {
                   <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
                 </a>
                 <Link
-                  href="/error"
+                  href="./error"
                   className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
                 >
                   view
@@ -131,7 +131,7 @@ export default function Project() {
                   <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
                 </a>
                 <Link
-                  href="/error"
+                  href="./error"
                   className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
                 >
                   view
@@ -207,7 +207,7 @@ export default function Project() {
                   <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
                 </a>
                 <Link
-                  href="/error"
+                  href="./error"
                   className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
                 >
                   view
