@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   DiReact,
   DiDjango,
@@ -79,7 +80,7 @@ export default function Project() {
               </div>
               <Image
                 src={mobile_loadup}
-                alt
+                alt="loadUp image"
                 className="block w-96 rounded-md"
               />
               <div className="flex flex-row items-center justify-around ">
@@ -89,12 +90,12 @@ export default function Project() {
                 >
                   <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
                 </a>
-                <a
+                <Link
                   href="/error"
                   className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
                 >
                   view
-                </a>
+                </Link>
               </div>
               <div className="flex flex-row justify-around items-center">
                 <h1 className=" text-3xl text-with-shadow">Technologies </h1>
@@ -120,17 +121,21 @@ export default function Project() {
                   <p> </p>
                 </div>
               </div>
-              <Image src={gabaya} className="block w-96 rounded-md" />
+              <Image
+                src={gabaya}
+                alt="gabaya image"
+                className="block w-96 rounded-md"
+              />
               <div className="flex flex-row items-center justify-around ">
                 <a href="https://github.com/Gamme99/Gabayaa" className="">
                   <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
                 </a>
-                <a
+                <Link
                   href="/error"
                   className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
                 >
                   view
-                </a>
+                </Link>
               </div>
               <div className="flex flex-row justify-around items-center">
                 <h1 className=" text-3xl text-with-shadow">Technologies </h1>
@@ -146,7 +151,7 @@ export default function Project() {
             <div className=" project3">
               <div>
                 <h1 className={`${tilt_Prism.className} text-2xl khan`}>
-                  homeFinder{" "}
+                  residenceFinder{" "}
                 </h1>
                 <div className={`${roboto.className} text-sm pl-2`}>
                   <p>A react-based web application that empowers</p>
@@ -154,7 +159,11 @@ export default function Project() {
                   <p>in a specified area with dynamic filtering.</p>
                 </div>
               </div>
-              <Image src={home1} className="block w-96 rounded-md" />
+              <Image
+                src={home1}
+                alt="residenceFinder image"
+                className="block w-96 rounded-md"
+              />
               <div className="flex flex-row items-center justify-around ">
                 <a
                   href="https://github.com/Gamme99/CS446-group-project"
@@ -188,17 +197,21 @@ export default function Project() {
                   <p>with CRUD functionality.</p>
                 </div>
               </div>
-              <Image src={django1} className="block w-96 rounded-md" />
+              <Image
+                src={django1}
+                alt="loanTracker image"
+                className="block w-96 rounded-md"
+              />
               <div className="flex flex-row items-center justify-around ">
                 <a href="https://github.com/Gamme99/loanTracker" className="">
                   <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
                 </a>
-                <a
+                <Link
                   href="/error"
                   className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
                 >
                   view
-                </a>
+                </Link>
               </div>
               <div className="flex flex-row justify-around items-center">
                 <h1 className=" text-3xl text-with-shadow">Technologies </h1>

@@ -5,11 +5,11 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <nav className=" fixed right-0 left-0 top-0 flex flex-col lg:flex-row items-center justify-between shadow-md  p-6">
+    <nav className=" bg-gradient-to-r from-blue-300 to-teal-200 fixed right-0 left-0 top-0 flex flex-col lg:flex-row items-center justify-between shadow-md  p-6">
       {/* Logo */}
       <div className=" lg:mb-0">
         <a href="/">
-          <Image src={logo} className="w-20 h-20" />
+          <Image src={logo} alt="logo image" className="w-20 h-20" />
         </a>
       </div>
 
@@ -17,25 +17,25 @@ export default function NavBar() {
       <div className="  flex-col justify-center items-center">
         <div className="text-sm  lg:flex-grow flex items-center gap-2">
           <Link
-            href="#landing"
+            href="/landing"
             className="block lg:inline-block text-lg mt-4 lg:mt-0 lg:mr-4 text-white hover:text-teal-800"
           >
             Home
           </Link>
           <Link
-            href="#project"
+            href="/project"
             className="block lg:inline-block text-lg mt-4 lg:mt-0 lg:mr-4 text-white hover:text-teal-800"
           >
             Project
           </Link>
           <Link
-            href="#about"
+            href="/about"
             className="block lg:inline-block text-lg mt-4 lg:mt-0 lg:mr-4 text-white hover:text-teal-800"
           >
             About
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="block lg:inline-block text-lg mt-4 lg:mt-0 text-white hover:text-teal-800"
           >
             Contact

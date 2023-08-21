@@ -75,7 +75,7 @@ export default function About() {
       <div>
         <h2>
           {" "}
-          <strong>Let's Get Started </strong>
+          <strong>Let&apos;s Get Started </strong>
         </h2>
         <p className="pl-5">
           Excited to work on your next project!{" "}
