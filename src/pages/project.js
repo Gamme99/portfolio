@@ -25,7 +25,7 @@ import django2 from "../images/django2.png";
 import home1 from "../images/home1.png";
 import gabaya from "../images/gabaya.png";
 import portfolio from "../images/portfolio.png";
-import mobile_loadup from "../images/mobile-loadup.png";
+import mobile_loadup from "../images/mobile-loadUp.png";
 
 import {
   Roboto,
@@ -77,7 +77,11 @@ export default function Project() {
                   <p> merchants real-time order tracking capabilities</p>
                 </div>
               </div>
-              <Image src={mobile_loadup} className="block w-96 rounded-md" />
+              <Image
+                src={mobile_loadup}
+                alt
+                className="block w-96 rounded-md"
+              />
               <div className="flex flex-row items-center justify-around ">
                 <a
                   href="https://github.com/Gamme99/Logistics-Dispatch"
