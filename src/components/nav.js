@@ -8,7 +8,7 @@ export default function NavBar() {
     <nav className=" bg-gradient-to-r from-blue-300 to-teal-200 fixed right-0 left-0 top-0 flex flex-col lg:flex-row items-center justify-between shadow-md  p-6">
       {/* Logo */}
       <div className=" lg:mb-0">
-        <a href="/">
+        <a href="./">
           <Image src={logo} alt="logo image" className="w-20 h-20" />
         </a>
       </div>

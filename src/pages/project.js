@@ -51,7 +51,7 @@ export default function Project() {
   return (
     <section
       id="project"
-      className=" bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center md:gap-28"
+      className=" px-10 bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center md:gap-28"
     >
       {/* <div className=" flex flex-col justify-center items-center w-full h-full"> */}
       {/* <div className=" w-60 h-60 "></div> */}
@@ -59,29 +59,21 @@ export default function Project() {
       {/* gives content below have more space at the top*/}
       <div className="flex flex-col justify-center items-center w-full h-full mb-10 ">
         <div className="mt-60 flex flex-col lg:flex-row items-center justify-around w-full h-full ">
-          <div className="flex flex-col items-center justify-around ">
-            <div className=" project1">
-              <div>
-                <h1 className={`${tilt_Prism.className} text-2xl khan`}>
-                  loadUp{" "}
-                </h1>
-                <div className={`${roboto.className} text-sm pl-2`}>
-                  <p>
-                    Collaborated on a cross-platform logistics dispatch system{" "}
-                  </p>
-                  <p>
-                    using React Native, serving drivers for navigation, earnings
-                  </p>
-                  <p>
-                    tracking, and order completion, while offering suppliers and
-                  </p>
-                  <p> merchants real-time order tracking capabilities</p>
+          <div className="flex flex-col items-center justify-center ">
+            <div className=" flex flex-col justify-start items-center  project1  ">
+              <div className="w-80">
+                <h1 className={`${tilt_Prism.className} text-2xl `}>loadUp </h1>
+                <div className={`${roboto.className}  text-sm pl-2 `}>
+                  Collaborated on a cross-platform logistics dispatch system{" "}
+                  using React Native, serving drivers for navigation, earnings
+                  tracking, and order completion, while offering suppliers and
+                  merchants real-time order tracking capabilities.
                 </div>
               </div>
               <Image
                 src={mobile_loadup}
                 alt="loadUp image"
-                className="block w-96 rounded-md"
+                className="block w-80 rounded-md"
               />
               <div className="flex flex-row items-center justify-around ">
                 <a
@@ -97,36 +89,33 @@ export default function Project() {
                   view
                 </Link>
               </div>
-              <div className="flex flex-row justify-around items-center">
-                <h1 className=" text-3xl text-with-shadow">Technologies </h1>
-                <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "}
-                <DiReact className="text-green-900 w-16 h-16" />
+              <div className="flex flex-row gap-5 items-center">
+                <h1 className=" text-2xl text-with-shadow">tools: </h1>
+                <DiJsBadge className="text-yellow-500 w-10 h-10  " />{" "}
+                <DiReact className="text-blue-700 w-10 h-10" />
                 <div>
-                  <DiMongodb className="text-green-900 w-20 h-20" />
+                  <DiMongodb className="text-green-900 w-10 h-10" />
                   <p className="text-sm"> mongoDB</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className=" project2">
-              <div>
-                <h1 className={`${tilt_Prism.className} text-2xl khan`}>
-                  gabaya{" "}
-                </h1>
+          <div className="flex flex-col justify-center items-center">
+            <div className=" flex flex-col justify-center items-center  project2">
+              <div className="w-80">
+                <h1 className={`${tilt_Prism.className} text-2xl`}>gabaya</h1>
                 <div className={`${roboto.className} text-sm pl-2`}>
-                  <p> versatile e-commerce platform enabling users to </p>
-                  <p> seamlessly browse and make purchases via </p>
-                  <p>Stripe or PayPal as well as sell their own products</p>
-                  <p> </p>
+                  versatile e-commerce platform enabling users to seamlessly
+                  browse and make purchases via Stripe or PayPal as well as sell
+                  their own products
                 </div>
               </div>
               <Image
                 src={gabaya}
                 alt="gabaya image"
-                className="block w-96 rounded-md"
+                className="block w-80 rounded-md"
               />
-              <div className="flex flex-row items-center justify-around ">
+              <div className="flex flex-row items-center justify-between ">
                 <a href="https://github.com/Gamme99/Gabayaa" className="">
                   <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
                 </a>
@@ -137,8 +126,8 @@ export default function Project() {
                   view
                 </Link>
               </div>
-              <div className="flex flex-row justify-around items-center">
-                <h1 className=" text-3xl text-with-shadow">Technologies </h1>
+              <div className="flex flex-row gap-5 items-center">
+                <h1 className=" text-2xl text-with-shadow">tools: </h1>
                 <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "}
                 <DiDjango className="text-green-900 w-16 h-16" />{" "}
               </div>
@@ -148,8 +137,8 @@ export default function Project() {
         <div className="flex flex-col lg:flex-row items-center justify-around w-full h-full ">
           {/* the second row */}
           <div className="flex flex-col items-center justify-center">
-            <div className=" project3">
-              <div>
+            <div className=" flex flex-col justify-center items-center project3">
+              <div className="w-80">
                 <h1 className={`${tilt_Prism.className} text-2xl khan`}>
                   residenceFinder{" "}
                 </h1>
@@ -162,7 +151,7 @@ export default function Project() {
               <Image
                 src={home1}
                 alt="residenceFinder image"
-                className="block w-96 rounded-md"
+                className="block w-80 rounded-md"
               />
               <div className="flex flex-row items-center justify-around ">
                 <a
@@ -178,16 +167,16 @@ export default function Project() {
                   view
                 </a>
               </div>
-              <div className="flex flex-row justify-around items-center">
-                <h1 className=" text-3xl text-with-shadow">Technologies </h1>
+              <div className="flex flex-row gap-5 items-center">
+                <h1 className=" text-2xl text-with-shadow">tools: </h1>
                 <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "}
-                <DiReact className="text-green-900 w-16 h-16" />{" "}
+                <DiReact className="text-blue-600 w-16 h-16" />{" "}
               </div>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <div className=" project4">
-              <div>
+            <div className=" flex flex-col justify-center items-center project4">
+              <div className="w-80">
                 <h1 className={`${tilt_Prism.className} text-2xl khan`}>
                   loanTracker{" "}
                 </h1>
@@ -200,7 +189,7 @@ export default function Project() {
               <Image
                 src={django1}
                 alt="loanTracker image"
-                className="block w-96 rounded-md"
+                className="block w-80 rounded-md"
               />
               <div className="flex flex-row items-center justify-around ">
                 <a href="https://github.com/Gamme99/loanTracker" className="">
@@ -213,8 +202,8 @@ export default function Project() {
                   view
                 </Link>
               </div>
-              <div className="flex flex-row justify-around items-center">
-                <h1 className=" text-3xl text-with-shadow">Technologies </h1>
+              <div className="flex flex-row gap-5 items-center">
+                <h1 className=" text-2xl text-with-shadow">tools: </h1>
                 {/* <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "} */}
                 <DiDjango className="text-green-900 w-16 h-16" />{" "}
               </div>
@@ -242,7 +231,7 @@ export default function Project() {
           className="  text-blue-400 tailwind-logo  md:tailwind-logo-mobile logo-11  hover:w-20 hover:h-20"
         />
       </div>
-      <div className="w-full h-full mt-20 "></div>
+      <div className="w-full h-full mt-40 "></div>
     </section>
   );
 }

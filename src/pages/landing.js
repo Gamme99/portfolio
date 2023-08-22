@@ -20,13 +20,13 @@ export default function About() {
   return (
     <section
       id="home"
-      className=" flex flex-col justify-center items-center bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen "
+      className=" flex flex-col justify-center items-center bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen mt-32"
     >
       <div className="text-center pt-10">
         <p
           className={`${khand.className} text-4xl text-white text-with-shadow pb-3`}
         >
-          Hello, my name is
+          Hello, I am
           <span
             className={`${tilt_Prism.className} px-5 text-4xl text-red-700`}
           >
@@ -57,7 +57,7 @@ export default function About() {
 
         <a
           href="https://docs.google.com/document/d/16rjJjCbGCbPAVuBuM_Kmpnbp_cllLRy8TqZWNLJXKp8/edit?usp=sharing"
-          className=" text-lg"
+          className=" text-lg hover:text-blue-800"
         >
           Resume
         </a>

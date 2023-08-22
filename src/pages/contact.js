@@ -45,7 +45,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center p-5 "
+      className="bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center p-5 mt-20 "
     >
       <div className="grid grid-cols-2 gap-4 w-full max-w-screen-lg py-5 mt-20">
         <div className="flex flex-col items-center justify-center">
