@@ -2,35 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-/* @font-face {
-  font-family: "Burtons";
-  src: url("../public/Burtons.otf");
-} */
-
 .text-with-shadow {
   text-shadow: 0.1rem 0rem 0rem rgb(82, 45, 161);
 }
@@ -75,21 +46,36 @@ body {
 } */
 
 .circular-logos {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80vh;
-  width: 80vh;
-  overflow: hidden;
-  position: relative;
+  align-items: center; */
+  /* height: 46vh;
+  width: 46vh; */
+  /* overflow: hidden; */
+  /* position: relative; */
 }
 
 .logo {
   position: absolute;
-  width: 10%;
-  height: 10%;
+  width: 7%;
+  height: 7%;
   transform-origin: center;
-  animation: rotateAnimation 33s linear infinite;
+  animation: rotateAnimation 36s linear infinite;
+}
+
+.tailwind-logo-mobile {
+  position: absolute;
+  height: 5%;
+  width: 8%;
+  transform-origin: center;
+  animation: rotateAnimation 36s linear infinite;
+}
+.tailwind-logo {
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  transform-origin: center;
+  animation: rotateAnimation 36s linear infinite;
 }
 
 .logo-1 {
@@ -125,13 +111,15 @@ body {
 .logo-11 {
   animation-delay: -33s;
 }
-
+.logo-12 {
+  animation-delay: -36s;
+}
 @keyframes rotateAnimation {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg) translate(200px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg) translate(170px) rotate(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg) translate(200px)
+    transform: translate(-50%, -50%) rotate(360deg) translate(170px)
       rotate(-360deg);
   }
 }

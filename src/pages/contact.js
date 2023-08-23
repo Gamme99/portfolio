@@ -45,9 +45,15 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center p-5 mt-20 "
+      className="bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center pt-5  "
     >
-      <div className="grid grid-cols-2 gap-4 w-full max-w-screen-lg py-5 mt-20">
+      <div className=" flex flex-col justify-center items-center py-10 px-3 h-full w-full mt-28  ">
+        <p className="text-blue-700 text-3xl">contact</p>
+        <p className="">
+          please fill out this form and I will respond to you soon
+        </p>
+      </div>
+      <div className="grid grid-cols-2 gap-4 w-full max-w-screen-lg  ">
         <div className="flex flex-col items-center justify-center">
           <label className="block text-gray-600 text-sm font-medium mb-1">
             First Name

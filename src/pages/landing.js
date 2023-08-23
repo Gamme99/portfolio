@@ -20,7 +20,7 @@ export default function About() {
   return (
     <section
       id="home"
-      className=" flex flex-col justify-center items-center bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen mt-32"
+      className=" flex flex-col justify-center items-center bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen mt-20"
     >
       <div className="text-center pt-10">
         <p

@@ -13,11 +13,6 @@ import {
   DiGithubBadge,
   DiMysql,
   DiPhp,
-  Dilinux,
-  DiWindows,
-  DiDocker,
-  DiJava,
-  DiNodejs,
 } from "react-icons/di";
 
 import django1 from "../images/django1.png";
@@ -51,14 +46,13 @@ export default function Project() {
   return (
     <section
       id="project"
-      className=" px-10 bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center md:gap-28"
+      className=" pb-10 bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center md:gap-28"
     >
-      {/* <div className=" flex flex-col justify-center items-center w-full h-full"> */}
-      {/* <div className=" w-60 h-60 "></div> */}
-
-      {/* gives content below have more space at the top*/}
       <div className="flex flex-col justify-center items-center w-full h-full mb-10 ">
-        <div className="mt-60 flex flex-col lg:flex-row items-center justify-around w-full h-full ">
+        <div className=" mt-40  py-10 px-3 text-2xl text-blue-800">
+          These are some of my highlighted projects
+        </div>
+        <div className=" flex flex-col lg:flex-row items-center justify-around w-full h-full ">
           <div className="flex flex-col items-center justify-center ">
             <div className=" flex flex-col justify-start items-center  project1  ">
               <div className="w-80">
@@ -75,12 +69,12 @@ export default function Project() {
                 alt="loadUp image"
                 className="block w-80 rounded-md"
               />
-              <div className="flex flex-row items-center justify-around ">
+              <div className="flex flex-row items-center justify-around gap-5 pt-2">
                 <a
                   href="https://github.com/Gamme99/Logistics-Dispatch"
-                  className=""
+                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
                 >
-                  <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
+                  github
                 </a>
                 <Link
                   href="./error"
@@ -92,7 +86,7 @@ export default function Project() {
               <div className="flex flex-row gap-5 items-center">
                 <h1 className=" text-2xl text-with-shadow">tools: </h1>
                 <DiJsBadge className="text-yellow-500 w-10 h-10  " />{" "}
-                <DiReact className="text-blue-700 w-10 h-10" />
+                <DiReact className="text-blue-700 w-14 h-14" />
                 <div>
                   <DiMongodb className="text-green-900 w-10 h-10" />
                   <p className="text-sm"> mongoDB</p>
@@ -115,10 +109,14 @@ export default function Project() {
                 alt="gabaya image"
                 className="block w-80 rounded-md"
               />
-              <div className="flex flex-row items-center justify-between ">
-                <a href="https://github.com/Gamme99/Gabayaa" className="">
-                  <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
+              <div className="flex flex-row items-center justify-center gap-5 pt-2 ">
+                <a
+                  href="https://github.com/Gamme99/Gabayaa"
+                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
+                >
+                  github
                 </a>
+
                 <Link
                   href="./error"
                   className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
@@ -153,12 +151,12 @@ export default function Project() {
                 alt="residenceFinder image"
                 className="block w-80 rounded-md"
               />
-              <div className="flex flex-row items-center justify-around ">
+              <div className="flex flex-row items-center justify-center gap-5 pt-2 ">
                 <a
                   href="https://github.com/Gamme99/CS446-group-project"
-                  className=""
+                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
                 >
-                  <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
+                  github
                 </a>
                 <a
                   href="https://zesty-blini-6ec0ac.netlify.app/"
@@ -170,7 +168,7 @@ export default function Project() {
               <div className="flex flex-row gap-5 items-center">
                 <h1 className=" text-2xl text-with-shadow">tools: </h1>
                 <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "}
-                <DiReact className="text-blue-600 w-16 h-16" />{" "}
+                <DiReact className="text-blue-600 w-14 h-14" />{" "}
               </div>
             </div>
           </div>
@@ -191,9 +189,12 @@ export default function Project() {
                 alt="loanTracker image"
                 className="block w-80 rounded-md"
               />
-              <div className="flex flex-row items-center justify-around ">
-                <a href="https://github.com/Gamme99/loanTracker" className="">
-                  <DiGithubBadge className="w-16 h-16 text-blue-400 hover:text-blue-900 transition-all " />
+              <div className="flex flex-row items-center justify-center gap-5 pt-2 ">
+                <a
+                  href="https://github.com/Gamme99/loanTracker"
+                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
+                >
+                  github
                 </a>
                 <Link
                   href="./error"
@@ -230,6 +231,7 @@ export default function Project() {
           src={tailwind_icon}
           className="  text-blue-400 tailwind-logo  md:tailwind-logo-mobile logo-11  hover:w-20 hover:h-20"
         />
+        <DiPython className="logo logo-12 text-yellow-600 hover:w-20 hover:h-20 " />
       </div>
       <div className="w-full h-full mt-40 "></div>
     </section>
