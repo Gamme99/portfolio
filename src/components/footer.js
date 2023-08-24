@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-blue-300 to-teal-200 border flex flex-col items-center justify-between p-6 shadow-md mb-2">
-      oneInfiniti &copy; 2023
+    <footer className="bg-gradient-to-r from-zinc-600 to-slate-600 text-white flex flex-col items-center justify-between p-6 relative footerr">
+      <div className="shadow-md">habrodev &copy; 2023</div>
     </footer>
   );
 }

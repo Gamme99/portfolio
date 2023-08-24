@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import profile from "../../public/profile.jpeg";
+import profile from "../images/profile.png";
 
 import { Tilt_Prism, Khand } from "next/font/google";
 
-import Layout from "../components/MyLayout";
+// import Layout from "./layout";
 
 const tilt_Prism = Tilt_Prism({
   weight: "400",
@@ -20,7 +20,8 @@ export default function About() {
   return (
     <section
       id="home"
-      className=" flex flex-col justify-center items-center bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen mt-20"
+      // className=" flex flex-col justify-center items-center bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen bg-yellow-700 shadow-md mt-20"
+      className=" bg-gradient-to-r from-zinc-600 to-slate-600 flex flex-col justify-center items-center  min-h-screen  shadow-lg mt-20"
     >
       <div className="text-center pt-10">
         <p

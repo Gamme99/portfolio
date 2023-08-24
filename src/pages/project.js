@@ -46,10 +46,10 @@ export default function Project() {
   return (
     <section
       id="project"
-      className=" pb-10 bg-gradient-to-r from-blue-300 to-teal-200 min-h-screen flex flex-col justify-center items-center md:gap-28"
+      className=" bg-gradient-to-r from-zinc-600 to-slate-600 pb-10   min-h-screen flex flex-col justify-center text-white items-center md:gap-28"
     >
       <div className="flex flex-col justify-center items-center w-full h-full mb-10 ">
-        <div className=" mt-40  py-10 px-3 text-2xl text-blue-800">
+        <div className=" mt-40  py-10 px-3 text-2xl">
           These are some of my highlighted projects
         </div>
         <div className=" flex flex-col lg:flex-row items-center justify-around w-full h-full ">
@@ -220,15 +220,16 @@ export default function Project() {
         <DiBootstrap className=" text-purple-700 logo logo-1 hover:w-20 hover:h-20" />
         <DiCss3 className=" text-blue-400 logo logo-2 hover:w-20 hover:h-20" />
         <DiHtml5 className=" text-orange-700 logo logo-3 hover:w-20 hover:h-20" />
-        <DiDjango className=" text-2xl text-green-800 logo logo-4 hover:w-20 hover:h-20" />
+        <DiDjango className=" text-green-500 logo logo-4 hover:w-20 hover:h-20" />
         <DiPhp className="  text-blue-800 logo logo-5 hover:w-20 hover:h-20" />
         <DiReact className="  text-blue-400 logo logo-6 hover:w-20 hover:h-20" />
         <DiJsBadge className="  text-yellow-500 logo logo-7 hover:w-20 hover:h-20" />
         <DiJqueryLogo className="  text-blue-400 logo logo-8 hover:w-20 hover:h-20" />
-        <DiMongodb className="  text-green-800 logo logo-9 hover:w-20 hover:h-20" />
+        <DiMongodb className="  text-green-500 logo logo-9 hover:w-20 hover:h-20" />
         <DiMysql className="  text-blue-400  logo logo-10 hover:w-20 hover:h-20" />
         <Image
           src={tailwind_icon}
+          alt="tailwin icon"
           className="  text-blue-400 tailwind-logo  md:tailwind-logo-mobile logo-11  hover:w-20 hover:h-20"
         />
         <DiPython className="logo logo-12 text-yellow-600 hover:w-20 hover:h-20 " />

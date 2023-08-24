@@ -41,18 +41,13 @@
   animation: bounce 1s infinite;
 }
 
-/* .animate-bounce {
-  animation: bounce 1s infinite;
-} */
+.about-color {
+  color: lightsteelblue;
+}
 
-.circular-logos {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* height: 46vh;
-  width: 46vh; */
-  /* overflow: hidden; */
-  /* position: relative; */
+footer {
+  border-top: 0.2rem solid black;
+  background-color: green;
 }
 
 .logo {
