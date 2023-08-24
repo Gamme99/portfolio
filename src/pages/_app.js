@@ -1,6 +1,6 @@
 // pages/_app.js
 import "../app/styles/global.css"; // Adjust the path if needed
-import Layout from "./Layout";
+import Layout from "./layout";
 // import Header
 import NavBar from "../components/nav";
 import Footer from "../components/footer";
