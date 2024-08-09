@@ -13,10 +13,10 @@ export default function Contact() {
 
   const generateMailtoLink = () => {
     const subject = "Web Dev Recruiter";
-    const recipient = "gammachiss@gmail.com";
+    const recipient = "galmogalamso@gmail.com";
 
     const body = `
-      Hello Gammachis,
+      Hello Galmo,
 
       ${message}
 

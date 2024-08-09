@@ -14,10 +14,10 @@ export default function About() {
       <div className="  py-5">
         <h2 className="text-2xl">Who I Am</h2>
         <p className="pl-5 lg:w-1/3 about-color">
-          My name is <strong>Gammachis Said</strong>. Class of 2023 graduate
-          from Central Washington University (CWU) with bachelor in computer
-          science specializing in web and application development with expertise
-          in a range of technologies.
+          My name is <strong>Galmo Said</strong>. Class of 2023 graduate from
+          Central Washington University (CWU) with bachelor in computer science
+          specializing in web and application development with expertise in a
+          range of technologies.
         </p>
       </div>
       <div>
@@ -93,7 +93,7 @@ export default function About() {
 
         <p className="pl-5 about-color">
           Excited to work on your next project!{" "}
-          <a href="mailto:saidg@cwu.edu">
+          <a href="mailto:galmogalamso@gmail.com">
             <span className="text-teal-900 underline hover:text-xl">
               Reach out
             </span>

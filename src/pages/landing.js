@@ -31,7 +31,7 @@ export default function About() {
           <span
             className={`${tilt_Prism.className} px-5 text-4xl text-red-700`}
           >
-            Gammachis
+            Galmo
           </span>
         </p>
         <p
@@ -57,7 +57,7 @@ export default function About() {
         </a>
 
         <a
-          href="https://docs.google.com/document/d/16rjJjCbGCbPAVuBuM_Kmpnbp_cllLRy8TqZWNLJXKp8/edit?usp=sharing"
+          href="https://docs.google.com/document/d/10cVgJX3dB0EEQxpChEB4t1e2Lk1pxQgUzs5vXoBgPDs/edit?usp=sharing"
           className=" text-lg hover:text-blue-800"
         >
           Resume

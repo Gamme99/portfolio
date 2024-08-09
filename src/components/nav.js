@@ -61,7 +61,7 @@ export default function NavBar() {
       </div>
       <div className="flex justify-center items-center">
         <a
-          href="https://docs.google.com/document/d/16rjJjCbGCbPAVuBuM_Kmpnbp_cllLRy8TqZWNLJXKp8/edit?usp=sharing"
+          href="https://docs.google.com/document/d/10cVgJX3dB0EEQxpChEB4t1e2Lk1pxQgUzs5vXoBgPDs/edit?usp=sharing"
           className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
         >
           Resume
