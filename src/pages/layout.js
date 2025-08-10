@@ -1,6 +1,6 @@
 // pages/Layout.js
 import React from "react";
-import "../app/styles/global.css"; // Adjust the path based on your project structure
+import "../app/styles/global.css"; 
 import NavBar from "../components/nav";
 import Footer from "../components/footer";
 

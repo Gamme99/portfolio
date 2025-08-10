@@ -42,199 +42,190 @@ const roboto = Roboto({
   subsets: ["latin"],
 });
 
+// ...existing code...
 export default function Project() {
   return (
     <section
       id="project"
-      className=" bg-gradient-to-r from-zinc-600 to-slate-600 pb-10   min-h-screen flex flex-col justify-center text-white items-center md:gap-28"
+      className="bg-gradient-to-r from-zinc-700 to-slate-800 min-h-screen flex flex-col items-center text-white py-20"
     >
-      <div className="flex flex-col justify-center items-center w-full h-full mb-10 ">
-        <div className=" mt-40  py-10 px-3 text-2xl">
-          These are some of my highlighted projects
-        </div>
-        <div className=" flex flex-col lg:flex-row items-center justify-around w-full h-full ">
-          <div className="flex flex-col items-center justify-center ">
-            <div className=" flex flex-col justify-start items-center  project1  ">
-              <div className="w-80">
-                <h1 className={`${tilt_Prism.className} text-2xl `}>loadUp </h1>
-                <div className={`${roboto.className}  text-sm pl-2 `}>
-                  Collaborated on a cross-platform logistics dispatch system{" "}
-                  using React Native, serving drivers for navigation, earnings
-                  tracking, and order completion, while offering suppliers and
-                  merchants real-time order tracking capabilities.
-                </div>
-              </div>
-              <Image
-                src={mobile_loadup}
-                alt="loadUp image"
-                className="block w-80 rounded-md"
-              />
-              <div className="flex flex-row items-center justify-around gap-5 pt-2">
-                <a
-                  href="https://github.com/Gamme99/Logistics-Dispatch"
-                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
-                >
-                  github
-                </a>
-                <Link
-                  href="./error"
-                  className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
-                >
-                  view
-                </Link>
-              </div>
-              <div className="flex flex-row gap-5 items-center">
-                <h1 className=" text-2xl text-with-shadow">tools: </h1>
-                <DiJsBadge className="text-yellow-500 w-10 h-10  " />{" "}
-                <DiReact className="text-blue-700 w-14 h-14" />
-                <div>
-                  <DiMongodb className="text-green-900 w-10 h-10" />
-                  <p className="text-sm"> mongoDB</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <div className=" flex flex-col justify-center items-center  project2">
-              <div className="w-80">
-                <h1 className={`${tilt_Prism.className} text-2xl`}>gabaya</h1>
-                <div className={`${roboto.className} text-sm pl-2`}>
-                  versatile e-commerce platform enabling users to seamlessly
-                  browse and make purchases via Stripe or PayPal as well as sell
-                  their own products
-                </div>
-              </div>
-              <Image
-                src={gabaya}
-                alt="gabaya image"
-                className="block w-80 rounded-md"
-              />
-              <div className="flex flex-row items-center justify-center gap-5 pt-2 ">
-                <a
-                  href="https://github.com/Gamme99/Gabayaa"
-                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
-                >
-                  github
-                </a>
+      <div className="w-full max-w-3xl flex flex-col items-center">
+        <h2 className="text-3xl font-bold mb-12 text-center">
+          My Highlighted Projects
+        </h2>
 
-                <Link
-                  href="./error"
-                  className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
-                >
-                  view
-                </Link>
-              </div>
-              <div className="flex flex-row gap-5 items-center">
-                <h1 className=" text-2xl text-with-shadow">tools: </h1>
-                <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "}
-                <DiDjango className="text-green-900 w-16 h-16" />{" "}
-              </div>
+        {/* Project 1 */}
+        <div className="bg-zinc-900/80 rounded-2xl shadow-lg p-8 mb-10 w-full flex flex-col md:flex-row items-center gap-8 transition hover:scale-[1.02]">
+          <div className="flex-1">
+            <h3 className={`${tilt_Prism.className} text-2xl mb-2`}>loadUp</h3>
+            <p className={`${roboto.className} text-base mb-4`}>
+              Collaborated on a cross-platform logistics dispatch system using React Native, serving drivers for navigation, earnings tracking, and order completion, while offering suppliers and merchants real-time order tracking capabilities.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <a
+                href="https://github.com/Gamme99/Logistics-Dispatch"
+                className="bg-blue-700 hover:bg-blue-900 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <Link
+                href="./error"
+                className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-800 hover:to-orange-800 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+              >
+                Visit
+              </Link>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="font-semibold">Tools:</span>
+              <DiJsBadge className="text-yellow-500 w-8 h-8" />
+              <DiReact className="text-blue-500 w-8 h-8" />
+              <DiMongodb className="text-green-700 w-8 h-8" />
             </div>
           </div>
+          <Image
+            src={mobile_loadup}
+            alt="loadUp image"
+            className="rounded-xl w-64 shadow-md"
+          />
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-around w-full h-full ">
-          {/* the second row */}
-          <div className="flex flex-col items-center justify-center">
-            <div className=" flex flex-col justify-center items-center project3">
-              <div className="w-80">
-                <h1 className={`${tilt_Prism.className} text-2xl khan`}>
-                  residenceFinder{" "}
-                </h1>
-                <div className={`${roboto.className} text-sm pl-2`}>
-                  <p>A react-based web application that empowers</p>
-                  <p>users to search for properties for sale or rent</p>
-                  <p>in a specified area with dynamic filtering.</p>
-                </div>
-              </div>
-              <Image
-                src={home1}
-                alt="residenceFinder image"
-                className="block w-80 rounded-md"
-              />
-              <div className="flex flex-row items-center justify-center gap-5 pt-2 ">
-                <a
-                  href="https://github.com/Gamme99/CS446-group-project"
-                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
-                >
-                  github
-                </a>
-                <a
-                  href="https://zesty-blini-6ec0ac.netlify.app/"
-                  className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
-                >
-                  view
-                </a>
-              </div>
-              <div className="flex flex-row gap-5 items-center">
-                <h1 className=" text-2xl text-with-shadow">tools: </h1>
-                <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "}
-                <DiReact className="text-blue-600 w-14 h-14" />{" "}
-              </div>
+
+        {/* Project 2 */}
+        <div className="bg-zinc-900/80 rounded-2xl shadow-lg p-8 mb-10 w-full flex flex-col md:flex-row items-center gap-8 transition hover:scale-[1.02]">
+          <div className="flex-1">
+            <h3 className={`${tilt_Prism.className} text-2xl mb-2`}>Gabayaa</h3>
+            <p className={`${roboto.className} text-base mb-4`}>
+              Versatile e-commerce platform enabling users to seamlessly browse and make purchases via Stripe or PayPal as well as sell their own products.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <a
+                href="https://github.com/Gamme99/Gabayaa"
+                className="bg-blue-700 hover:bg-blue-900 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <Link
+                href="https://gabayaa.onrender.com/"
+                className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-800 hover:to-orange-800 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit
+              </Link>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="font-semibold">Tools:</span>
+              <DiJsBadge className="text-yellow-500 w-8 h-8" />
+              <DiDjango className="text-green-700 w-10 h-10" />
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <div className=" flex flex-col justify-center items-center project4">
-              <div className="w-80">
-                <h1 className={`${tilt_Prism.className} text-2xl khan`}>
-                  loanTracker{" "}
-                </h1>
-                <div className={`${roboto.className} text-sm pl-2`}>
-                  <p>Django-based loan tracker website,</p>
-                  <p>facilitating loaner data management</p>
-                  <p>with CRUD functionality.</p>
-                </div>
-              </div>
-              <Image
-                src={django1}
-                alt="loanTracker image"
-                className="block w-80 rounded-md"
-              />
-              <div className="flex flex-row items-center justify-center gap-5 pt-2 ">
-                <a
-                  href="https://github.com/Gamme99/loanTracker"
-                  className="bg-gradient-to-r from-blue-300 to-blue-900 text-white px-4 py-2 rounded-md text-sm hover:from-blue-900 hover:to-blue-900"
-                >
-                  github
-                </a>
-                <Link
-                  href="./error"
-                  className="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-4 py-2 rounded-md text-sm hover:from-orange-800 hover:to-orange-800"
-                >
-                  view
-                </Link>
-              </div>
-              <div className="flex flex-row gap-5 items-center">
-                <h1 className=" text-2xl text-with-shadow">tools: </h1>
-                {/* <DiJsBadge className="text-yellow-500 w-10 h-10 " />{" "} */}
-                <DiDjango className="text-green-900 w-16 h-16" />{" "}
-              </div>
+          <Image
+            src={gabaya}
+            alt="gabaya image"
+            className="rounded-xl w-64 shadow-md"
+          />
+        </div>
+
+        {/* Project 3 */}
+        <div className="bg-zinc-900/80 rounded-2xl shadow-lg p-8 mb-10 w-full flex flex-col md:flex-row items-center gap-8 transition hover:scale-[1.02]">
+          <div className="flex-1">
+            <h3 className={`${tilt_Prism.className} text-2xl mb-2`}>loan-tracker</h3>
+            <p className={`${roboto.className} text-base mb-4`}>
+              Django-based loan tracker website, facilitating loaner data management with CRUD functionality.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <a
+                href="https://github.com/Gamme99/loan-tracker"
+                className="bg-blue-700 hover:bg-blue-900 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <Link
+                href="./error"
+                className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-800 hover:to-orange-800 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+              >
+                Visit
+              </Link>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="font-semibold">Tools:</span>
+              <DiDjango className="text-green-700 w-10 h-10" />
             </div>
           </div>
+          <Image
+            src={django1}
+            alt="loanTracker image"
+            className="rounded-xl w-64 shadow-md"
+          />
+        </div>
+
+        {/* Project 4 */}
+        <div className="bg-zinc-900/80 rounded-2xl shadow-lg p-8 mb-10 w-full flex flex-col md:flex-row items-center gap-8 transition hover:scale-[1.02]">
+          <div className="flex-1">
+            <h3 className={`${tilt_Prism.className} text-2xl mb-2`}>residenceFinder</h3>
+            <p className={`${roboto.className} text-base mb-4`}>
+              A React-based web application that empowers users to search for properties for sale or rent in a specified area with dynamic filtering.
+            </p>
+            <div className="flex gap-4 mb-4">
+              <a
+                href="https://github.com/Gamme99/CS446-group-project"
+                className="bg-blue-700 hover:bg-blue-900 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://zesty-blini-6ec0ac.netlify.app/"
+                className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-800 hover:to-orange-800 text-white px-4 py-2 rounded-md text-sm font-medium transition"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit
+              </a>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="font-semibold">Tools:</span>
+              <DiJsBadge className="text-yellow-500 w-8 h-8" />
+              <DiReact className="text-blue-500 w-8 h-8" />
+            </div>
+          </div>
+          <Image
+            src={home1}
+            alt="residenceFinder image"
+            className="rounded-xl w-64 shadow-md"
+          />
         </div>
       </div>
-      {/* // end of projects  */}
-      <div className="mb-40 pb-20 ">
-        <p className={`${roboto.className} text-3xl `}>Skills</p>
+
+      {/* Skills Section */}
+      <div className="mt-20 mb-10">
+        <p className={`${roboto.className} text-3xl font-bold mb-6 text-center`}>Skills</p>
+        <div className="flex flex-wrap justify-center items-center gap-6">
+          <DiBootstrap className="text-purple-700 w-12 h-12" />
+          <DiCss3 className="text-blue-400 w-12 h-12" />
+          <DiHtml5 className="text-orange-700 w-12 h-12" />
+          <DiDjango className="text-green-500 w-12 h-12" />
+          <DiPhp className="text-blue-800 w-12 h-12" />
+          <DiReact className="text-blue-400 w-12 h-12" />
+          <DiJsBadge className="text-yellow-500 w-12 h-12" />
+          <DiJqueryLogo className="text-blue-400 w-12 h-12" />
+          <DiMongodb className="text-green-500 w-12 h-12" />
+          <DiMysql className="text-blue-400 w-12 h-12" />
+          <Image
+            src={tailwind_icon}
+            alt="tailwind icon"
+            className="w-12 h-12"
+          />
+          <DiPython className="text-yellow-600 w-12 h-12" />
+        </div>
       </div>
-      <div className="circular-logos flex justify-center items-center overflow-auto  ">
-        <DiBootstrap className=" text-purple-700 logo logo-1 hover:w-20 hover:h-20" />
-        <DiCss3 className=" text-blue-400 logo logo-2 hover:w-20 hover:h-20" />
-        <DiHtml5 className=" text-orange-700 logo logo-3 hover:w-20 hover:h-20" />
-        <DiDjango className=" text-green-500 logo logo-4 hover:w-20 hover:h-20" />
-        <DiPhp className="  text-blue-800 logo logo-5 hover:w-20 hover:h-20" />
-        <DiReact className="  text-blue-400 logo logo-6 hover:w-20 hover:h-20" />
-        <DiJsBadge className="  text-yellow-500 logo logo-7 hover:w-20 hover:h-20" />
-        <DiJqueryLogo className="  text-blue-400 logo logo-8 hover:w-20 hover:h-20" />
-        <DiMongodb className="  text-green-500 logo logo-9 hover:w-20 hover:h-20" />
-        <DiMysql className="  text-blue-400  logo logo-10 hover:w-20 hover:h-20" />
-        <Image
-          src={tailwind_icon}
-          alt="tailwin icon"
-          className="  text-blue-400 tailwind-logo  md:tailwind-logo-mobile logo-11  hover:w-20 hover:h-20"
-        />
-        <DiPython className="logo logo-12 text-yellow-600 hover:w-20 hover:h-20 " />
-      </div>
-      <div className="w-full h-full mt-40 "></div>
     </section>
   );
 }
+// ...existing code...

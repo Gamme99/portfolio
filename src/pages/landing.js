@@ -57,7 +57,7 @@ export default function About() {
         </a>
 
         <a
-          href="https://docs.google.com/document/d/10cVgJX3dB0EEQxpChEB4t1e2Lk1pxQgUzs5vXoBgPDs/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1CCpiksF6Aef8_ar1Q6AOQBTImvxEGDT9p3kTEKL1UP0/edit?usp=sharing"
           className=" text-lg hover:text-blue-800"
         >
           Resume
